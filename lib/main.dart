@@ -43,6 +43,9 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             locale: DevicePreview.locale(context),
             builder: DevicePreview.appBuilder,
+            theme: CupertinoThemeData(
+              brightness: Brightness.light,
+            ),
             routes: {
               '/': (context) => IOsHomePage(),
             },
